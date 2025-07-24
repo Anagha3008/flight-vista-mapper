@@ -7,7 +7,7 @@ import {
   DropdownMenuSeparator, 
   DropdownMenuTrigger 
 } from "@/components/ui/dropdown-menu";
-import { LogOut, Settings, User, Share } from "lucide-react";
+import { LogOut, Settings, User, Share, MapPin } from "lucide-react";
 import routerLogo from "@/assets/router-logo.png";
 
 interface HeaderProps {
@@ -30,6 +30,11 @@ export const Header = ({ user, onLogout }: HeaderProps) => {
           <Button variant="ghost" size="sm">
             <Share className="h-4 w-4 mr-2" />
             Share
+          </Button>
+          
+          <Button variant="ghost" size="sm">
+            <MapPin className="h-4 w-4 mr-2" />
+            Local
           </Button>
           
           {user && (
